@@ -15,7 +15,7 @@ use tar::Archive;
 use which::which;
 
 /// The default version of zlib to use if the `ZLIB_VERSION` environment variable is not present
-const ZLIB_DEFAULT_VERSION: &str = "1.2.13";
+const ZLIB_DEFAULT_VERSION: &str = "1.3";
 const ZLIB_GPG_SERVER_AND_KEY_ID: (&str, &str) = ("keyserver.ubuntu.com", "783FCD8E58BCAFBA");
 const ZLIB_DOWNLOAD_URL_PREFIX: &str = "https://www.zlib.net";
 /// The default version of pcre2 to use if the `PCRE2_VERSION` environment variable is not present
@@ -35,7 +35,7 @@ B7C1C14360F353A36862E4D5231C84CDDCC69C45 \
 );
 const OPENSSL_DOWNLOAD_URL_PREFIX: &str = "https://www.openssl.org/source/";
 /// The default version of NGINX to use if the `NGX_VERSION` environment variable is not present
-const NGX_DEFAULT_VERSION: &str = "1.23.3";
+const NGX_DEFAULT_VERSION: &str = "1.24.0";
 const NGX_GPG_SERVER_AND_KEY_ID: (&str, &str) = ("keyserver.ubuntu.com", "A0EA981B66B0D967");
 const NGX_DOWNLOAD_URL_PREFIX: &str = "https://nginx.org/download";
 /// If you are adding another dependency, you will need to add the server/public key tuple below.
