@@ -219,6 +219,11 @@ impl Request {
         }
     }
 
+    /// Retrieves the http protocol for this request. For example: "HTTP/2.0"
+    pub fn http_protocol(&self) -> &NgxStr {
+        unsafe { NgxStr::from_ngx_str(self.0.http_protocol) }
+    }
+
     /// Set HTTP status of response.
     pub fn set_status(&mut self, status: HTTPStatus) {
         self.0.headers_out.status = status.into();
